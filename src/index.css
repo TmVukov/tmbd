@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
+
+:root {
+  --my-font-family: 'Montserrat', sans-serif;
+  --my-text-color: rgba(255, 255, 255, 0.87);
+  --my-background-color: #242424;
+}
+
+body {
+  font-family: var(--my-font-family);
+  color: var(--my-text-color);
+  background-color: var(--my-background-color);
+
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-helper {
+  width: 200px;
+}
+
+.logo {
+  all: unset;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.logo:hover {
+  color: lightgray;
+  background: none;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-caption {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.movie-img {
+  width: 100%;
+  object-fit: cover;
+  height: 800px;
+}
+
+.star-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+  color: yellow;
+  margin-right: 5px;
+}
+
+.badge {
+  margin: 10px 5px 0 0;
+}
+
+.card-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-link {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.card-link:hover {
+  background: #0069d9;
+}
+
+.details-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 50px;
+}
+
+.details-poster-col,
+.details-video-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-overview-col {
+  padding-left: 10px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+.details-overview {
+  text-align: justify;
+}
+
+.details-cast-col {
+  padding: 0 10px;
+}
+
+.details-actor-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.footer {
+  background: #2b3035;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 950px) {
+  .carousel-caption {
+    padding: 10px;
+  }
+
+  .movie-title {
+    font-size: 24px;
+  }
+
+  .release-date {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-input {
+    margin: 10px 0;
+  }
+
+  .navbar-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .movie-title,
+  .release-date {
+    display: none;
+  }
+}
